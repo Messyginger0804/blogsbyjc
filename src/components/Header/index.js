@@ -2,11 +2,17 @@ import React from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
 
-import { FaLinkedin } from 'react-icons/fa';
-import { AiFillGithub } from 'react-icons/ai';
-import { ImProfile } from 'react-icons/im';
+// import { FaLinkedin } from 'react-icons/fa';
+// import { AiFillGithub } from 'react-icons/ai';
+// import { ImProfile } from 'react-icons/im';
+import { MdLightMode } from 'react-icons/md';
+import Linkedin from './svgs/LinkedIn';
+import Profile from './svgs/Profile';
+import GitHub from './svgs/GitHub';
+import LightMode from './svgs/LightMode';
 
 
+// MdLightMode
 // FaLinkedin
 // ImProfile
 // SiGithub
@@ -18,12 +24,20 @@ const Header = () => {
                 <Link className='mr-2' href='/'>Home</Link>
                 <Link className='mx-2' href='/about'>About</Link>
                 <Link className='mr-2' href='/contact'>Contact</Link>
-                <button>T</button>
+                <button>
+                    <MdLightMode size={23} />
+                </button>
             </nav>
-            <div className='text-5xl flex justify-end '>
-                <a className='mx-4' href='http://example.com'><FaLinkedin size='2.5rem' /></a>
-                <a className='mx-4' href='http://example.com'><AiFillGithub size='2.5rem' /></a>
-                <a className='mx-4' href='http://example.com'><ImProfile size='2.5rem' /></a>
+            <div className='text-5xl flex justify-end items-center'>
+                <a className='w-6 h-6 mr-4 inline-block ' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'>
+                    <Linkedin
+                        className='icon'
+                    // className='hover:scale-105 transition-all ease duration-200 active:scale-150' 
+                    /></a>
+                <a className='w-6 h-6 mx-4' href='http://example.com'>
+                    <GitHub className='hover:scale-200 transition-all ease duration-200' /></a>
+                <a className='w-6 h-6 ml-4' href='http://example.com'>
+                    <Profile className='hover:scale-200 transition-all ease duration-200' /></a>
             </div>
         </header>
     )
