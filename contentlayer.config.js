@@ -22,14 +22,15 @@ const Blog = defineDocumentType(() => ({
             required: true,
         },
 
-        desc: {
+        description: {
             type: 'string',
             required: true
         },
 
         image: {
-            type: 'string',
-            required: true,
+            type: 'image',
+            // type: 'string',
+            // required: true,
         },
 
         isPublished: {
