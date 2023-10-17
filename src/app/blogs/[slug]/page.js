@@ -2,6 +2,8 @@
 // import RenderMdx from "@/src/components/Blog/RenderMdx";
 // import Tag from "@/src/components/Elements/Tag";
 // import siteMetadata from "@/src/utils/siteMetaData";
+import BlogDetails from "@/components/Blog/BlogDetails";
+import RenderMdx from "@/components/Blog/RenderMdx";
 import Tag from "@/components/Elements/Tag";
 import { allBlogs } from "contentlayer/generated";
 import { slug } from "github-slugger";
@@ -116,7 +118,7 @@ export default function BlogPage({ params }) {
                         sizes="100vw"
                     />
                 </div>
-                {/* <BlogDetails blog={blog} slug={params.slug} /> */}
+                <BlogDetails blog={blog} slug={params.slug} />
 
                 <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
                     <div className="col-span-12  lg:col-span-4">
@@ -155,7 +157,7 @@ export default function BlogPage({ params }) {
                             </ul> */}
                         </details>
                     </div>
-                    {/* <RenderMdx blog={blog} /> */}
+                    <RenderMdx blog={blog} />
                 </div>
             </article>
         </>
