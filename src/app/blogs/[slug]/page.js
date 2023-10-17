@@ -61,6 +61,7 @@ import Image from "next/image";
 
 export default function BlogPage({ params }) {
     const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+    console.log(blog)
 
     // let imageList = [siteMetadata.socialBanner];
     // if (blog.image) {
@@ -129,18 +130,20 @@ export default function BlogPage({ params }) {
                             <summary className="text-lg font-semibold capitalize cursor-pointer">
                                 Table Of Content
                             </summary>
-                            {/* <ul className="mt-4 font-in text-base">
+                            <ul className="mt-4 font-in text-base">
                                 {blog.toc.map((heading) => {
                                     return (
                                         <li key={`#${heading.slug}`} className="py-1">
                                             <a
                                                 href={`#${heading.slug}`}
                                                 data-level={heading.level}
-                                                className="data-[level=two]:pl-0  data-[level=two]:pt-2
-                                       data-[level=two]:border-t border-solid border-dark/40
-                                       data-[level=three]:pl-4
-                                       sm:data-[level=three]:pl-6
-                                       flex items-center justify-start
+                                                className="
+                                                data-[level=two]:pl-0  
+                                                data-[level=two]:pt-2
+                                                data-[level=two]:border-t border-solid border-dark/40
+                                                data-[level=three]:pl-4
+                                                sm:data-[level=three]:pl-6
+                                                flex items-center justify-start
                                        "
                                             >
                                                 {heading.level === "three" ? (
@@ -154,7 +157,7 @@ export default function BlogPage({ params }) {
                                         </li>
                                     );
                                 })}
-                            </ul> */}
+                            </ul>
                         </details>
                     </div>
                     <RenderMdx blog={blog} />
