@@ -17,10 +17,12 @@ function HomeCover({ blogs }) {
                 <Image
                     src={blog.image.filePath.replace("../public", "")}
                     // placeholder='blur'
-                    // blurDataURL={blog.image.blurhashUrl}
+                    // blurDataURL={blog.image.blurhashDataUrl}
                     alt={blog.title}
                     fill
                     className='w-full h-full object-center object-cover rounded-3xl -z-10'
+                    sizes='100vw'
+                    priority
                 />
 
                 <div className='w-3/4 p-16 flex flex-col items-start justify-center z-0 text-light'>

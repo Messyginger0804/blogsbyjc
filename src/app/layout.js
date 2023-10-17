@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         className={cssFunc(
           inter.variable,
           manrope.variable,
-          "font-mr bg-light dark:bg-dark m-4"
+          "font-mr bg-light dark:bg-dark m-4 text-dark"
 
         )}
       >

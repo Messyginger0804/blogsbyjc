@@ -14,6 +14,7 @@ import LightMode from './svgs/LightMode';
 
 // MdLightMode
 // FaLinkedin
+// GrLinkedinOption
 // ImProfile
 // SiGithub
 const Header = () => {
