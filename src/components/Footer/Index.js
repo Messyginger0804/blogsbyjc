@@ -55,11 +55,11 @@ function Footer() {
                 <span>
                     © 2023 CodeBucks. All rights reserved.
                 </span>
-                <Link href='/sitemap.xml' className='text-center underline hover:font-bold'>
+                {/* <Link href='/sitemap.xml' className='text-center underline hover:font-bold'>
                     sitemap.xm
-                </Link>
+                </Link> */}
                 <div className='text-center'>
-                    Made with &hearts; by <a href='http://jcashleyportfolio.com' className='underline hover:font-bold'>JC Ashley </a>
+                    Made with &hearts; by <a href='https://jcashleyportfolio.netlify.app/' target="_blank" className='underline hover:font-bold'>JC Ashley </a>
                 </div>
             </div>
         </footer>
