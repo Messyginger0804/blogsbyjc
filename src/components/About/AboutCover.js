@@ -16,7 +16,7 @@ const AboutCover = () => {
                 /> */}
                 <img
                     src={profileCharacter}
-                    className='w-4/5  xs:w-3/4 md:w-full h-full object-contain object-center'
+                    className='w-4/5 p-9 xs:w-3/4 md:w-full h-full object-contain object-center'
                 />
             </div>
 

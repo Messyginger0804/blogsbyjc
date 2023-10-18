@@ -9,9 +9,9 @@ const Logo = () => {
     return (
         <Link href='/' className='flex items-center text-dark'>
             <div className='object-cover w-16 rounded-full overflow-hidden border border-color-dark mr-4'>
-                <Image src={profileImg} alt='JC' className='flex justify-center w-full h-auto rounded-full' />
+                <Image src={profileImg} alt='JC' className='flex justify-center w-full h-full rounded-full' />
             </div>
-            <span className='font-bold text-xl'>Jeremy "JC" Ashley</span>
+            <span className='font-bold text-4xl'>Jeremy "JC" Ashley</span>
 
         </Link>
     )
