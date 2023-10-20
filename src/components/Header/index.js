@@ -30,15 +30,15 @@ const Header = () => {
                 </button>
             </nav>
             <div className='text-5xl flex justify-end items-center'>
-                <a className='w-6 h-6 mr-4 inline-block ' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'>
+                <a className='w-6 h-6 mr-4 inline-block ' target='_blank' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'>
                     <Linkedin
                         className="hover:scale-125 transition-all ease duration-200"
                     /></a>
-                <a className="inline-block w-6 h-6 mr-4" href='http://example.com'>
+                <a className="inline-block w-6 h-6 mr-4" target='_blank' href='https://github.com/Messyginger0804'>
                     <GitHub
                         className="hover:scale-125 transition-all ease duration-200"
                     /></a>
-                <a className="inline-block w-6 h-6 mr-4" href='http://example.com'>
+                <a className="inline-block w-6 h-6 mr-4" target='_blank' href='https://jcashleyportfolio.netlify.app/'>
                     <Profile
                         className="hover:scale-125 transition-all ease duration-200"
                     /></a>

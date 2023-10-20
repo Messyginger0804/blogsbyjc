@@ -7,7 +7,10 @@ import { format } from 'date-fns'
 function BlogLayoutTwo({ blog }) {
     return (
         <div className='group grid grid-cols-12 gap-4 items-center text-dark'>
-            <Link href={blog.url} className='col-span-4 h-full rounded-xl overflow-hidden'>
+            <Link
+                className='col-span-4 h-full rounded-xl overflow-hidden'
+                href={blog.url}
+            >
                 <Image
                     src={blog.image.filePath.replace("../public", "")}
                     // placeholder='blur'

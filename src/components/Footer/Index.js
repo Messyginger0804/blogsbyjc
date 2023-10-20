@@ -2,8 +2,8 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import Linkedin from '../Header/svgs/LinkedIn';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrLinkedinOption } from 'react-icons/gr';
+// import { FaLinkedinIn } from 'react-icons/fa';
+// import { GrLinkedinOption } from 'react-icons/gr';
 
 
 import GitHub from '../Header/svgs/GitHub';
@@ -35,7 +35,7 @@ function Footer() {
                 <input type="submit" className='bg-dark text-light cursor-pointer font-medium rounded px-5 py-1' />
             </form>
 
-            <div className='flex items-center mt-8 border-2 border-light bg-light rounded-xl mb-2'>
+            <div className='flex items-center mt-8 border-2 border-light bg-light rounded-xl mb-2 p-12'>
                 <a className='w-6 h-6 mx-4 inline-block bg-dark' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'>
                     <Linkedin
                         className="hover:scale-125 transition-all ease duration-200 text-dark"
@@ -53,7 +53,7 @@ function Footer() {
             </div>
             <div className='w-full mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex items-center justify-between'>
                 <span>
-                    © 2023 CodeBucks. All rights reserved.
+                    © 2023 JC Software. All rights reserved.
                 </span>
                 {/* <Link href='/sitemap.xml' className='text-center underline hover:font-bold'>
                     sitemap.xm
