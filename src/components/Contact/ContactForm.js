@@ -43,7 +43,7 @@ export default function ContactForm() {
                 className="bg-red-100/20 rounded-2xl pl-4 w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
         focus:border-gray" />
             <input type="submit" value="send request"
-                className="bg-red-100/80 rounded-2xl mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer" />
+                className="bg-red-100/80 mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer" />
         </form>
     );
 }

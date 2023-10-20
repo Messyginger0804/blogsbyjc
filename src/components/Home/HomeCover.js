@@ -16,6 +16,7 @@ function HomeCover({ blogs }) {
                 bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-3xl z-0 '
                 />
                 <Link href={blog.url}>
+                    {console.log(blog)}
 
                     <Image
                         src={blog.image.filePath.replace("../public", "")}

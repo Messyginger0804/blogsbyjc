@@ -35,7 +35,7 @@ function Footer() {
                 <input type="submit" className='bg-dark text-light cursor-pointer font-medium rounded px-5 py-1' />
             </form>
 
-            <div className='flex items-center mt-8 border-2 border-light bg-light rounded-xl mb-2 p-12'>
+            <div className='flex items-center mt-8 border-2 border-light bg-light rounded-xl mb-2 p-2'>
                 <a className='w-6 h-6 mx-4 inline-block bg-dark' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'>
                     <Linkedin
                         className="hover:scale-125 transition-all ease duration-200 text-dark"
