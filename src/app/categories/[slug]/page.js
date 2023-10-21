@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
     return {
         title: `${params.slug.replaceAll("-", " ")} Blogs`,
-        description: `Learn more about ${params.slug === "all" ? "web development" : params.slug} through our collection of expert blogs and tutorials`,
+        description: `Learn more about ${params.slug === "all" ? "web development" : params.slug} through my collection of blogs and tutorials`,
     };
 }
 

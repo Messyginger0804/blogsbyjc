@@ -1,11 +1,11 @@
 import ContactForm from "@/components/Contact/ContactForm";
-// import siteMetadata from "@/utils/siteMetaData";
-import { profileCharacter } from "@/components/About/AboutCover";
+import siteMetadata from "@/utils/metaData";
+// import { profileCharacter } from "@/components/About/AboutCover";
 
-// export const metadata = {
-//     title: "Contact Me",
-//     description: `Contact me through the form available on this page or email me at ${siteMetadata.email}`,
-// };
+export const metadata = {
+    title: "Contact Me",
+    description: `Contact me through the form available on this page or email me at ${siteMetadata.email}`,
+};
 
 
 export default function Contact() {

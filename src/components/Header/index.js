@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
@@ -17,7 +18,10 @@ import LightMode from './svgs/LightMode';
 // GrLinkedinOption
 // ImProfile
 // SiGithub
+
+
 const Header = () => {
+
     return (
         <header className='w-full p-4 px-0 flex items-center justify-between'>
             <Logo />
