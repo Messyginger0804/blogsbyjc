@@ -79,7 +79,7 @@ export default function BlogPage({ params, ...args }) {
         "author": [{
             "@type": "Person",
             "name": blog?.author ? [blog.author] : siteMetadata.author,
-            "url": siteMetadata.twitter,
+            "url": siteMetadata.portfolio,
         }]
     }
 
