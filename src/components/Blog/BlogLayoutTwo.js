@@ -11,15 +11,6 @@ function BlogLayoutTwo({ blog }) {
                 className='col-span-4 h-full rounded-xl overflow-hidden'
                 href={blog.url}
             >
-                {/* <Image
-                    src={blog.image.filePath.replace("../public", "")}
-                    // placeholder='blur'
-                    // blurDataURL={blog.image.blurhashUrl}
-                    alt={blog.title}
-                    width={blog.image.width}
-                    height={blog.image.height}
-                    className='aspect-square w-full object-cover object-center group-hover:scale-105 transition-all ease duration-300'
-                /> */}
                 <Image
                     src={blog.image.filePath.replace("../public", "")}
                     placeholder="blur"
