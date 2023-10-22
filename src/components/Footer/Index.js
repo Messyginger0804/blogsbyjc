@@ -9,6 +9,7 @@ import Linkedin from '../Header/svgs/LinkedIn';
 import GitHub from '../Header/svgs/GitHub';
 import Profile from '../Header/svgs/Profile';
 import Link from 'next/link';
+import siteMetadata from '@/utils/metaData';
 
 function Footer() {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -36,30 +37,30 @@ function Footer() {
             </form>
 
             <div className='flex items-center mt-8 border-2 border-light bg-light rounded-xl mb-2 p-2'>
-                <a className='w-6 h-6 mx-4 inline-block bg-dark' href='https://www.linkedin.com/in/jeremy-ashley-webdev/'>
+                <a className='w-6 h-6 mx-4 inline-block bg-dark' href={siteMetadata.linkedin}>
                     <Linkedin
                         className="hover:scale-125 transition-all ease duration-200 text-dark"
                     />
                     {/* <GrLinkedinOption /> */}
                 </a>
-                <a className="inline-block w-6 h-6 mr-4 bg-light" href='http://example.com'>
+                <a className="inline-block w-6 h-6 mr-4 bg-light" href={siteMetadata.github}>
                     <GitHub
                         className="hover:scale-125 transition-all ease duration-200 fill-light"
                     /></a>
-                <a className="fill-light inline-block w-6 h-6 mr-4 bg-light" href='http://example.com '>
+                <a className="fill-light inline-block w-6 h-6 mr-4 bg-light" href={siteMetadata.portfolio}>
                     <Profile
                         className="fill-light hover:scale-125 transition-all ease duration-200 "
                     /></a>
             </div>
             <div className='w-full mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex items-center justify-between'>
                 <span>
-                    © 2023 JC Software. All rights reserved.
+                    © 2023 JC Software. All rights reserved. 😜
                 </span>
                 {/* <Link href='/sitemap.xml' className='text-center underline hover:font-bold'>
                     sitemap.xm
                 </Link> */}
                 <div className='text-center'>
-                    Made with &hearts; by <a href='https://jcashleyportfolio.netlify.app/' target="_blank" className='underline hover:font-bold'>JC Ashley </a>
+                    Made with &hearts; by <a href={siteMetadata.portfolio} target="_blank" className='underline hover:font-bold'>JC Ashley </a>
                 </div>
             </div>
         </footer>

@@ -13,6 +13,7 @@ const siteMetadata = {
     github: 'https://github.com/codebucks27',
     twitter: 'https://twitter.com/Messyginger0804',
     linkedin: 'https://www.linkedin.com/in/jeremy-ashley-webdev/',
+    portfolio: 'https://jcashleyportfolio.netlify.app/',
     locale: 'en-US',
 }
 
