@@ -6,7 +6,7 @@ const siteMetadata = {
     description: 'A blog created with Next.js, Tailwind.css and contentlayer. (created with already existing content)',
     language: 'en-us',
     theme: 'system', // system, dark or light
-    siteUrl: 'https://jcashleyportfolio.netlify.app/', // your website URL
+    siteUrl: 'https://blogs-by-jc-focontent.vercel.app/', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'j.c.ashley4363@gmail.com',
