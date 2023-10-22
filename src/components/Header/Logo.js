@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import profileImg from '/public/profile.jpg'
+import profileImg from '/public/profile.png'
 import Image from 'next/image'
 
 
