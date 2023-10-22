@@ -11,9 +11,9 @@ const BlogDetails = ({ blog, slug: blogSlug }) => {
             <time className='m-3'>
                 {format(parseISO(blog.publishedAt), "LLLL d, yyyy")}
             </time>
-            <span>
+            {/* <span>
                 <ViewCounter slug={blogSlug} />
-            </span>
+            </span> */}
             <div className='m-3'>
                 {blog.readingTime.text}
             </div>
