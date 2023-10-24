@@ -7,7 +7,7 @@ const siteMetadata = {
     language: 'en-us',
     theme: 'system', // system, dark or light
     siteUrl: 'https://blogs-by-jc-focontent.vercel.app/', // your website URL
-    siteLogo: '/logo.png',
+    siteLogo: '/profile.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'j.c.ashley4363@gmail.com',
     github: 'https://github.com/Messyginger0804',

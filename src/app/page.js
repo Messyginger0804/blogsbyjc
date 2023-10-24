@@ -8,10 +8,9 @@ export default function Home() {
   console.log(allBlogs)
   return (
     <main className="flex flex-col items-center justify-center">
-      {/* HELLO WORLD */}
       <HomeCover blogs={allBlogs} />
-      <FeatuedPosts blogs={allBlogs} />
-      <RecentPosts blogs={allBlogs} />
+      {/* <FeatuedPosts blogs={allBlogs} /> */}
+      {/* <RecentPosts blogs={allBlogs} /> */}
     </main>
   )
 }
