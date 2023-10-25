@@ -103,7 +103,7 @@ export default function BlogPage({ params, ...args }) {
                             {blog.title}
                         </h1>
                     </div>
-                    <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
+                    <div className="absolute top-0 left-0 rounded-3xl right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
                     <Image
                         src={blog.image.filePath.replace("../public", "")}
                         placeholder="blur"
@@ -111,7 +111,7 @@ export default function BlogPage({ params, ...args }) {
                         alt={blog.title}
                         width={blog.image.width}
                         height={blog.image.height}
-                        className="aspect-square w-full h-full object-cover object-center"
+                        className="aspect-square w-full h-full rounded-3xl object-cover object-center"
                         priority
                         sizes="100vw"
                     />

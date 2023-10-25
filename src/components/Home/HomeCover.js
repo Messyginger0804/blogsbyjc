@@ -17,7 +17,7 @@ function HomeCover({ blogs }) {
                 />
                 <Link href={blog.url}>
                     {console.log(blog)}
-                    <div className="absolute top-0 left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
+                    <div className="absolute top-0 rounded-3xl left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
 
 
                     <Image

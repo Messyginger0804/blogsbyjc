@@ -17,10 +17,10 @@ function Footer() {
     console.log(errors);
     return (
         <footer className="mt-6 rounded-2xl bg-dark/90 dark:bg-accentDark/80 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
-            <h3 className="mt-6 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
+            <h3 className="mt-6 font-medium dark:font-bold text-center capitalize text-2xl md:text-4xl px-4">
                 Interesting Stories | Updates | Guides
             </h3>
-            <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
+            <p className="mt-2 md:mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm">
                 Please connect with me on <a target='_blank' className='underline' href={siteMetadata.linkedin}>LinkedIn</a> for updates on when the next blog post will be published. 🌚
             </p>
             {/* <form
@@ -36,7 +36,7 @@ function Footer() {
                     className="bg-dark text-light dark:text-dark dark:bg-light cursor-pointer font-medium rounded px-3 sm:px-5 py-1" />
             </form> */}
 
-            <div className='flex items-center mt-8 border-2 border-light dark:bg-light rounded-xl mb-2 p-2 dark:fill-dark'>
+            <div className='flex items-center mt-2 md:mt-6 border-2 border-light dark:bg-light rounded-xl mb-2 p-2 dark:fill-dark'>
                 <a className='w-6 h-6 mx-4 inline-block bg-dark' href={siteMetadata.linkedin}>
                     <Linkedin
                         className="hover:scale-125 transition-all ease duration-200 text-dark"
