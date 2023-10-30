@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center">
       <HomeCover blogs={allBlogs} />
-      {/* <FeatuedPosts blogs={allBlogs} /> */}
+      <FeatuedPosts blogs={allBlogs} />
       {/* <RecentPosts blogs={allBlogs} /> */}
     </main>
   )
