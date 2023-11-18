@@ -31,7 +31,6 @@ In the creation of **Blogs by JC**, I made use of the following technologies:
 - **MDX:** A popular format for creating rich and dynamic content.
 
 ## How to Explore The Site
-```
 
 1. Open a web browser and visit https://blogsbyjc.vercel.app/.
 
