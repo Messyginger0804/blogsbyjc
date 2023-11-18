@@ -1,15 +1,15 @@
 # Blogs by JC - A Blog Site
 
-Welcome to **Blogs by JC**, a blog site powered by Next.js, Tailwind CSS, and Contentlayer. This project represents a significant milestone for me as it's my first experience working with MDX for blog content, and now I feel comfortable writing in this format and sharing my thoughts and knowledge.
+Welcome to **Blogs by JC**, a blog site powered by [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/docs/installation), and [Contentlayer](https://contentlayer.dev/). This project represents a significant milestone for me as it's my first experience working with MDX for blog content, and now I feel comfortable writing in this format and sharing my thoughts and knowledge.
 
 ## Project Overview
 
 - **Project Name:** Blogs by JC
-- **Framework:** Next.js
-- **Styling:** Tailwind CSS
-- **Content Management:** Contentlayer
-- **Developed By:** [Your Name]
-- **GitHub Repository:** [Insert Repository URL]
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/docs/installation)
+- **Content Management:** [Contentlayer](https://contentlayer.dev/)
+- **Developed By:** [Jeremy Ashley](https://jcashleyportfolio.netlify.app/)
+- **GitHub Repository:** [click here for repo](https://github.com/Messyginger0804/blogsbyjc)
 
 ## Features
 
