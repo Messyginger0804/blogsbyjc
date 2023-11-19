@@ -31,7 +31,9 @@ function FeatuedPosts({ blogs }) {
             {/* <Link
                 className="flex justify-end font-medium mt-6 end-0 text-accent dark:text-accentDark underline underline-offset-2 text-base md:text-lg"
                 href='/categories/all'
-            >view all</Link> */}
+            >
+                view all
+            </Link> */}
         </section>
 
     )
