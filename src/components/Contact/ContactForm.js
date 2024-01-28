@@ -2,6 +2,9 @@
 import React, { useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
+// import Logo from "../Header/Logo";
+import Image from "next/image";
+import me from "../../../public/bitmoji1.png"
 
 
 // import { useForm } from "react-hook-form";
@@ -15,7 +18,13 @@ export default function ContactForm() {
         emailjs.sendForm('service_yc58hva', 'template_1ep997k', form.current, '_0eJeVE_0upDw61qU')
             // .then(toast('Thank you for your message, I will get back to you ASAP!'))
             .then(toast(
-                <h3 className='text-center text-4xl'>Thank you for your message, I will get back to you ASAP!</h3>
+                <div className="flex">
+                    <Image
+                        height={100}
+                        src={me}
+                        alt="JC"
+                    /> <h3 className='text-center text-2xl md:text-4xl'>Thank you for your message, I will get back to you ASAP!</h3>
+                </div>
             ))
         e.target.reset();
 
@@ -49,7 +58,7 @@ export default function ContactForm() {
                 <textarea
                     name="Body"
                     required
-                    placeholder="My project is about..."
+                    placeholder="I think your blog is really cool..."
                     rows={3}
                     className="bg-red-100/20 rounded-2xl pl-4 w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
         focus:border-gray" />
