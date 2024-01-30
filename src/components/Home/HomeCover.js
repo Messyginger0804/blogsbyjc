@@ -8,7 +8,7 @@ import { slug } from 'github-slugger';
 function HomeCover({ blogs }) {
 
     const sortedBlogs = sortBlogs(blogs);
-    const blog = sortedBlogs[2]
+    const blog = sortedBlogs[3]
     return (
         <div className='w-full inline-block'>
             <article className='flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[60vh] sm:h-[85vh]'>
@@ -37,7 +37,7 @@ function HomeCover({ blogs }) {
 
                 <div className='w-full lg:w-3/4 p-6 sm:p-8 md:p-12  lg:p-16 flex flex-col items-start justify-center z-0 text-light'>
                     <Tag
-                        link={`/categories/${slug(blog.tags[0])}`}
+                        link={`/categories/${slug(blog.tags[3])}`}
                         // href={`/categories/${slug(blog.tags[0])}`}
                         name={blog.tags[0]}
                     />
