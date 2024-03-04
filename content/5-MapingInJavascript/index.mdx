@@ -54,8 +54,8 @@ const users = [
   { id: 3, name: 'Charlie' },
 ];
 
-// Fire up .map() for a list of user names
-const userNames = users.map(user => user.name);
+// Fire up .map() for a list of user names. It's always a good idea to use the ternary operator infront of data especially when data is conditionally rendering.
+const userNames = users?.map(user => user.name);
 
 // Boom! You'll get ['Alice', 'Bob', 'Charlie']
 ```
