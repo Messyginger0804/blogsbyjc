@@ -7,8 +7,9 @@ import Link from 'next/link';
 
 function FeatuedPosts({ blogs }) {
     const sortedBlogs = sortBlogs(blogs);
-    console.log("------->", sortedBlogs[3])
+    // console.log("------->", sortedBlogs[3])
 
+    // console.log(sortBlogs.title)
     return (
         <section className="w-full mt-16 sm:mt-24  md:mt-32 px-5 sm:px-10 md:px-24  sxl:px-32 flex flex-col items-center justify-center">
 
@@ -23,10 +24,10 @@ function FeatuedPosts({ blogs }) {
 
             <div className="grid grid-cols-2 grid-rows-2 gap-6  mt-10 sm:mt-16">
                 <article className=" col-span-2  sxl:col-span-1 row-span-2 relative">
-                    <BlogLayoutOne blog={sortedBlogs[4]} />
+                    <BlogLayoutOne blog={sortedBlogs[3]} />
                 </article>
                 <article className=" col-span-2 sm:col-span-1 row-span-1 relative">
-                    <BlogLayoutTwo blog={sortedBlogs[1]} />
+                    <BlogLayoutTwo blog={sortedBlogs[4]} />
 
                 </article>
                 <article className="col-span-2 sm:col-span-1 row-span-1 relative">
