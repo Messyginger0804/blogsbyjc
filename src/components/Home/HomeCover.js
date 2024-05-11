@@ -16,7 +16,7 @@ function HomeCover({ blogs }) {
                 bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-3xl z-0 '
                 />
                 <Link href={blog.url}>
-                    {console.log(blog)}
+                    {/* {console.log(blog)} */}
                     <div className="absolute top-0 rounded-3xl left-0 right-0 bottom-0 h-full bg-dark/60 dark:bg-dark/40" />
 
 
@@ -25,8 +25,6 @@ function HomeCover({ blogs }) {
                         placeholder='blur'
                         blurDataURL={blog.image.blurhashDataUrl}
                         alt={blog.title}
-                        // width={blog.image.width}
-                        // height={blog.image.height}
                         fill
                         className='w-full h-full object-center object-cover rounded-3xl -z-10'
                         sizes='100vw'
@@ -37,8 +35,7 @@ function HomeCover({ blogs }) {
 
                 <div className='w-full lg:w-3/4 p-6 sm:p-8 md:p-12  lg:p-16 flex flex-col items-start justify-center z-0 text-light'>
                     <Tag
-                        link={`/categories/${slug(blog.tags[6])}`}
-                        // href={`/categories/${slug(blog.tags[0])}`}
+                        link={`/categories/${slug(blog.tags[3])}`}
                         name={blog.tags[0]}
                     />
                     <Link href={blog.url} className='mt-6'>
