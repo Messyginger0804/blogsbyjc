@@ -7,10 +7,12 @@ export function ProjectCard({ proj }) {
 
     return (
         <div className='text-center p-10 rounded-xl w-[280px] h-[400px] my-6 max-w-sm relative shadow-accent dark:shadow-accentDark
-         hover:shadow-xl text-black bg-accent/60 dark:bg-accentDark dark:text-black border-2 border-black hover:scale-105 duration-200'>
-            <div className='flex flex-col justify-center h-[400px] relative top-1/2 transform -translate-y-1/2'>
-                <h3 className='text-lg font-medium dark:text-accentDark'>{proj.title}</h3>
+         hover:shadow-xl text-black bg-accent/60 dark:bg-accentDark dark:border-light dark:text-black border-2 border-black hover:scale-105 duration-200'>
 
+            {/* Title at the top */}
+            <h3 className='text-lg font-medium dark:text-black absolute top-4 left-0 right-0 mx-4'>{proj.title}</h3>
+
+            <div className='flex flex-col justify-center h-[400px]'>
                 <div className='flex justify-center mb-0'>
                     <Image
                         className='fit object-center rounded'
