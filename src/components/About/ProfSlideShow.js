@@ -1,14 +1,16 @@
+'use client';
+
 import React from 'react';
 import SlideShow from './SlideShow';
-import FreelanceCard from './FreelanceCard';
+import ProfessionalCard from './ProfessionalCard';
 
-function FreelanceSlideShow({ contractedJobs }) {
+function ProfSlideShow({ contractedJobs }) {
     return (
         <SlideShow
             items={contractedJobs}
-            renderItem={(job) => <FreelanceCard key={job.title} job={job} />}
+            renderItem={(job) => <ProfessionalCard key={job.title} job={job} />}
         />
     );
 }
 
-export default FreelanceSlideShow;
+export default ProfSlideShow;

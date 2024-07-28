@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { BiArrowToLeft, BiArrowToRight } from 'react-icons/bi';
