@@ -19,7 +19,7 @@ export const projects = [
         live: 'https://jcfreecodecamp.netlify.app/',
     },
     {
-        isPublished: true,
+        isPublished: false,
         inProgress: true,
         title: "Diner Finder",
         image: dinfin,
