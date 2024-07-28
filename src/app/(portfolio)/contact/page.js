@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Contact() {
     return (
-        <section className="w-full h-auto lg:h-[75vh] border-b-2 border-solid border-dark dark:border-light flex flex-col lg:flex-row items-center justify-center text-dark dark:text-light">
+        <section className="w-full h-auto lg:h-[75vh] border-b-2 border-solid border-dark dark:border-light flex flex-col lg:flex-row items-center justify-center text-dark dark:text-light mt-20">
             <div className="mx-auto bg-gradient-to-b from-accent dark:from-accentDark rounded-full w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
                 <Image
                     src={profileCharacter}

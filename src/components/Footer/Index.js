@@ -1,19 +1,12 @@
 "use client"
 import React from 'react'
-import { useForm } from 'react-hook-form';
 import Linkedin from '../Header/svgs/LinkedIn';
-// import { FaLinkedinIn } from 'react-icons/fa';
-// import { GrLinkedinOption } from 'react-icons/gr';
-
 
 import GitHub from '../Header/svgs/GitHub';
 import Profile from '../Header/svgs/Profile';
-import Link from 'next/link';
 import siteMetadata from '@/utils/metaData';
 
 function Footer() {
-    // const { register, handleSubmit, formState: { errors } } = useForm();
-    // const onSubmit = data => console.log(data);
     console.log(errors);
     return (
         <footer className="mt-6 rounded-2xl bg-dark/90 dark:bg-accentDark/80 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
