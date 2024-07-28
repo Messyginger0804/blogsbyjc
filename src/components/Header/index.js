@@ -2,26 +2,13 @@
 import React, { useState } from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
-
-// import { FaLinkedin } from 'react-icons/fa';
-// import { AiFillGithub } from 'react-icons/ai';
-// import { ImProfile } from 'react-icons/im';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
 import Linkedin from './svgs/LinkedIn';
 import Profile from './svgs/Profile';
 import GitHub from './svgs/GitHub';
-// import LightMode from './svgs/LightMode';
 import siteMetadata from '@/utils/metaData';
 import { useThemeSwitch } from '../Hooks/useThemeSwitch';
 import { cssFunc } from '@/utils';
-
-
-// MdLightMode
-// FaLinkedin
-// GrLinkedinOption
-// ImProfile
-// SiGithub
-// MdDarkMode
 
 
 const Header = () => {
@@ -69,8 +56,8 @@ const Header = () => {
                 }}
 
             >
-                <Link href="/" className="mr-2">Home</Link>
-                <Link href="/about" className="mx-2">About</Link>
+                <Link href="/" className="mr-2">Blog</Link>
+                <Link href="/portfolio" className="mx-2">Portfolio</Link>
                 <Link href="/contact" className="mx-2">Contact</Link>
                 <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
                     className={cssFunc("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" :
@@ -86,8 +73,8 @@ const Header = () => {
 
             <nav className=" w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
           fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50">
-                <Link href="/" className="mr-2">Home</Link>
-                <Link href="/about" className="mx-2">About</Link>
+                <Link href="/" className="mr-2">Blog</Link>
+                <Link href="/portfolio" className="mx-2">Portfolio</Link>
                 <Link href="/contact" className="mx-2">Contact</Link>
                 <button onClick={() => setMode(mode === "light" ? "dark" : "light")}
                     className={cssFunc("w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1", mode === "light" ? "bg-dark text-light" :
