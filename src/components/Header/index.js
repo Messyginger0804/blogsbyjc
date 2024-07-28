@@ -86,7 +86,6 @@ const Header = () => {
                     }
                 </button>
             </nav>
-            {/* <div className='text-5xl flex justify-end items-center'> */}
             <div className=" hidden sm:flex items-center">
                 <a className='w-6 h-6 mr-4 inline-block ' target='_blank' href={siteMetadata.linkedin}>
                     <Linkedin
@@ -96,7 +95,7 @@ const Header = () => {
                     <GitHub
                         className="hover:scale-125 transition-all ease duration-200 dark:fill-light"
                     /></a>
-                <a className="inline-block w-6 h-6 mr-4" target='_blank' href={siteMetadata.portfolio}>
+                <a className="inline-block w-6 h-6 mr-4" href='/portfolio/#portfolio'>
                     <Profile
                         className="hover:scale-125 transition-all ease duration-200 dark:fill-light"
                     /></a>
