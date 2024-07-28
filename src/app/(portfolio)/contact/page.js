@@ -1,27 +1,30 @@
 import ContactForm from "@/components/Contact/ContactForm";
 import siteMetadata from "@/utils/metaData";
-// import { profileCharacter } from "@/components/About/AboutCover";
+import profileCharacter from "@/components/About/assets/justme.png";
+import Image from "next/image";
 
 export const metadata = {
     title: "Contact Me",
     description: `Contact me through the form available on this page or email me at ${siteMetadata.email}`,
 };
 
-
 export default function Contact() {
     return (
-        <section className="w-full h-auto md:h-[75vh] border-b-2 border-solid border-dark dark:border-light flex flex-col md:flex-row items-center justify-center text-dark dark:text-light">
-            {/* <div className="inline-block -5 w-full sm:w-4/5 md:w-2/5 h-full md:border-r-2 border-solid border-dark dark:border-light">
-
-                <img
+        <section className="w-full h-auto lg:h-[75vh] border-b-2 border-solid border-dark dark:border-light flex flex-col lg:flex-row items-center justify-center text-dark dark:text-light">
+            <div className="mx-auto bg-gradient-to-b from-accent dark:from-accentDark rounded-full w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
+                <Image
                     src={profileCharacter}
-                    className="h-[40vh] m-4 relative"
+                    className='rounded-lg'
+                    alt="Profile Character"
+                    priority
+                    fill
+                    style={{ objectFit: "cover" }}
                 />
-            </div> */}
-            <div div className="w-full md:w-3/5 flex flex-col items-start justify-center px-5 xs:px-10 md:px-16 pb-8" >
-                <h2 className="font-bold capitalize  text-2xl xs:text-3xl sm:text-4xl">Let's Connect!</h2>
+            </div>
+            <div className="w-full lg:w-1/2 flex flex-col text-left items-start justify-center px-5 xs:px-10 pb-10 lg:px-16 lg:h-[75vh] overflow-y-auto">
+                <h2 className="font-bold capitalize text-2xl xs:text-3xl sm:text-4xl">Let's Connect!</h2>
                 <ContactForm />
             </div>
-        </section >
+        </section>
     );
 }

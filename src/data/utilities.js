@@ -12,6 +12,16 @@ export const link = {
 
 }
 
+export const bannerStuff = [
+    "Lead Intern at iServiceWeb 💻",
+    "UTD Alumni 🎓",
+    "10+ Years of Management Experience 💼",
+    "12+ Projects Completed 📄",
+    "Volunteer for Dallas Software Developer 🌐",
+    "Blogger 📝",
+    "Funny Guy 😜",
+];
+
 // utilities.js or your utilities file
 export function truncateText(text, maxLength) {
     if (text?.length <= maxLength) {
