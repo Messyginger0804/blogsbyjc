@@ -86,6 +86,7 @@ const Header = () => {
                     }
                 </button>
             </nav>
+            {/* <div className='text-5xl flex justify-end items-center'> */}
             <div className=" hidden sm:flex items-center">
                 <a className='w-6 h-6 mr-4 inline-block ' target='_blank' href={siteMetadata.linkedin}>
                     <Linkedin

@@ -1,11 +1,10 @@
 import { backTech, frontTech } from "@/data/tech";
-import { SkillList } from "@/data/skills";
 
 const Skills = () => {
     return (
         <section className="w-full flex flex-col p-5 xs:p-10 sm:p-12 md:p-16 lg:p-20 border-b-2 border-solid border-dark dark:border-light text-dark dark:text-light">
             <span className="font-semibold text-lg sm:text-3xl md:text-4xl text-accent dark:text-accentDark">
-                I'm comfortable in...
+                I'm comfortable working with...
             </span>
             <h3 className="ml-24">
                 <span className="inline-block bg-gradient-to-r from-accent to-accent dark:from-accentDark/50 dark:to-accentDark/50 bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500">

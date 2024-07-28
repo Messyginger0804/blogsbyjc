@@ -7,8 +7,8 @@ import Link from "next/link";
 
 
 export const metadata = {
-    title: "About Me",
-    description: `Here are some details about my self.`,
+    title: "Portfolio",
+    description: `This is Jeremy Ashley's portfolio. Learn about me, projects and the technologies I use.`,
 };
 
 export default function About() {
