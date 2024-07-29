@@ -3,14 +3,16 @@ import React from 'react'
 import Tag from '../Elements/Tag'
 import Link from 'next/link'
 import { slug } from 'github-slugger'
+import { format } from 'date-fns'
+
 
 function BlogLayoutOne({ blog }) {
     return (
-        <div className="group inline-block overflow-hidden rounded-xl">
+        <div className="group inline-block overflow-hidden rounded-xl h-full">
             <div
                 className="absolute top-0 left-0 bottom-0 right-0 h-full
             bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-xl z-10
-            "
+"
             />
             <Image
                 src={blog.image.filePath.replace("../public", "")}
@@ -22,7 +24,6 @@ function BlogLayoutOne({ blog }) {
                 className="w-full h-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300"
                 sizes="(max-width: 1180px) 100vw, 50vw"
             />
-
             <div className="w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20">
                 <Tag
                     link={`/categories/${slug(blog.tags[0])}`}
@@ -37,6 +38,9 @@ function BlogLayoutOne({ blog }) {
                               transition-[background-size] duration-500 "
                         >
                             {blog.title}
+                        </span>
+                        <span className="inline-block w-full capitalize text-gray dark:text-light/50 font-semibold  text-xs sm:text-base">
+                            {format(new Date(blog.publishedAt), "MMMM dd, yyyy")}
                         </span>
                     </h2>
                 </Link>
