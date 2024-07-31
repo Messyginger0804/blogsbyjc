@@ -14,7 +14,7 @@ export function ProfessionalCard({ job }) {
             <Link href={job.link}>
                 <div className='flex justify-center'>
                     <Image
-                        className='flex justify-center fit object-center rounded h-32 w-28'
+                        className='flex justify-center fit object-center rounded h-28 w-28 rounded-xl'
                         src={job.image}
                         alt={`${job.title} 'logo'`}
                     />

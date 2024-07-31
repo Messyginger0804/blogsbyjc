@@ -6,7 +6,7 @@ export const contractedJobs = [
     {
         title: 'iServiceWeb',
         contact: 'Osvaldo X',
-        phoneNumber: '6465358422',
+        phoneNumber: '646-535-8422',
         link: 'https://www.iservicewebsites.com/',
         image: ISW,
         description: 'iServiceWeb',
