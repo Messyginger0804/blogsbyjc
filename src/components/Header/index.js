@@ -11,6 +11,7 @@ import { useThemeSwitch } from '../Hooks/useThemeSwitch';
 import { cssFunc } from '@/utils';
 import { CgFileDocument } from "react-icons/cg";
 import Document from './svgs/Document';
+import Folder from './svgs/Folder';
 
 
 const Header = () => {
@@ -100,7 +101,8 @@ const Header = () => {
                     /></a>
                 <a className="inline-block w-6 h-6 mr-4" href='/portfolio/#portfolio'>
                     {/* <Profile */}
-                    <Document
+                    {/* <Document */}
+                    <Folder
                         className="hover:scale-125 transition-all ease duration-200 dark:fill-light"
                     /></a>
             </div>

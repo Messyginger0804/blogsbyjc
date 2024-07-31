@@ -1,10 +1,10 @@
 "use client"
-import React from 'react'
+import React from 'react';
 import Linkedin from '../Header/svgs/LinkedIn';
-
 import GitHub from '../Header/svgs/GitHub';
 import Profile from '../Header/svgs/Profile';
 import siteMetadata from '@/utils/metaData';
+import Folder from '../Header/svgs/Folder';
 
 function Footer() {
     console.log(errors);
@@ -27,7 +27,8 @@ function Footer() {
                         className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark"
                     /></a>
                 <a className="fill-light inline-block w-6 h-6 mr-4 mb-1 dark:bg-light " href='/portfolio/#portfolio'>
-                    <Profile
+                    {/* <Profile */}
+                    <Folder
                         className="fill-light hover:scale-125 transition-all ease duration-200 dark:fill-dark"
                     /></a>
             </div>
