@@ -9,6 +9,8 @@ import GitHub from './svgs/GitHub';
 import siteMetadata from '@/utils/metaData';
 import { useThemeSwitch } from '../Hooks/useThemeSwitch';
 import { cssFunc } from '@/utils';
+import { CgFileDocument } from "react-icons/cg";
+import Document from './svgs/Document';
 
 
 const Header = () => {
@@ -97,7 +99,8 @@ const Header = () => {
                         className="hover:scale-125 transition-all ease duration-200 dark:fill-light"
                     /></a>
                 <a className="inline-block w-6 h-6 mr-4" href='/portfolio/#portfolio'>
-                    <Profile
+                    {/* <Profile */}
+                    <Document
                         className="hover:scale-125 transition-all ease duration-200 dark:fill-light"
                     /></a>
             </div>

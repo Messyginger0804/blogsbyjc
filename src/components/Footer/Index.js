@@ -26,7 +26,7 @@ function Footer() {
                     <GitHub
                         className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark"
                     /></a>
-                <a className="fill-light inline-block w-6 h-6 mr-4 dark:bg-light " href='/portfolio/#portfolio'>
+                <a className="fill-light inline-block w-6 h-6 mr-4 mb-1 dark:bg-light " href='/portfolio/#portfolio'>
                     <Profile
                         className="fill-light hover:scale-125 transition-all ease duration-200 dark:fill-dark"
                     /></a>
