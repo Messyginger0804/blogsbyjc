@@ -1,7 +1,5 @@
 import ContactForm from "@/components/Contact/ContactForm";
 import siteMetadata from "@/utils/metaData";
-import profileCharacter from "@/components/About/assets/justme.png";
-import Image from "next/image";
 import Avator from "@/components/About/Avator";
 
 export const metadata = {
