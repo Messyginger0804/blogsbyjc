@@ -1,0 +1,74 @@
+---
+title: "From PostgreSQL to MongoDB: My Journey with NoSQL Databases"
+description: "Explore the shift from traditional SQL databases like PostgreSQL to NoSQL solutions like MongoDB, and learn how this transition influenced my career and internship at iService Web."
+image: "../../public/blog-images/mongodb-vs-postgresql.jpeg"
+publishedAt: "2024-08-01"
+updatedAt: "2024-08-01"
+author: "JC Ashley"
+isPublished: true
+tags: 
+- MongoDB
+- PostgreSQL
+- NoSQL
+- Database Technologies
+---
+
+## Introduction
+
+During my time in UTD's software development program, I had the opportunity to broaden my technical skills, particularly in database management. Initially trained on PostgreSQL, a robust SQL database, I later ventured into the world of NoSQL with MongoDB. This exploration not only expanded my understanding of database technologies but also played a pivotal role in securing my internship at iService Web, where MongoDB is the primary database system.
+
+## SQL vs. NoSQL: Understanding the Difference
+
+Databases are the backbone of almost every modern application, and choosing the right one can significantly affect both performance and scalability. Here's a brief overview of the key differences between SQL and NoSQL databases:
+
+### SQL Databases
+
+- **Structured Query Language (SQL)**: SQL databases use a structured query language for defining and manipulating data, which is very powerful.
+- **Schema-Oriented**: These databases require a predefined schema to determine the structure of your data before you work with it.
+- **Relational**: SQL databases are table-based and excel in multi-row transactions, making them a great choice for complex queries.
+
+### NoSQL Databases
+
+- **Flexible Schema**: NoSQL databases allow you to store data in many ways (document, key-value, graph, or wide-column stores), which means you can store your data in the format that best suits your application.
+- **Scalability**: Typically designed to excel in horizontal scaling and handle massive volumes of data across many commodity servers.
+- **Agility**: With a schema-less structure, NoSQL databases can evolve with the needs of your applications without significant downtime.
+
+## A Quick Run Through MongoDB
+
+MongoDB is a document-oriented NoSQL database known for its high performance, high availability, and easy scalability. It uses documents (similar to JSON objects) and collections instead of rows and tables, which provides a more flexible data model that aligns well with modern object-oriented programming practices.
+
+### Key Features of MongoDB
+
+- **Document Model**: The core unit of storage is the BSON document, which is a binary representation of JSON with additional type information.
+- **Indexing**: Any field in a MongoDB document can be indexed to improve the performance of searches.
+- **Replication**: MongoDB provides high availability with replica sets, a group of mongod processes that maintain the same data set.
+- **Sharding**: It supports horizontal scaling through sharding, distributing data across several machines to improve read/write efficiency.
+
+### Quick Tips for MongoDB Beginners
+
+- **Understand JSON**: MongoDB uses JSON-like documents for data storage. Familiarize yourself with JSON syntax to effectively manage and query data.
+- **Start Small**: Begin with a simple schema and expand as needed. MongoDB's flexibility allows you to adjust your data model as your application evolves.
+- **Use Indexes Wisely**: Indexes can greatly increase performance but use them strategically—over-indexing can lead to unnecessary overhead.
+
+### Sample Data Schema in MongoDB
+
+Here's what a simple user data schema might look like in MongoDB:
+
+```json
+{
+  "_id": ObjectId("507f191e810c19729de860ea"),
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "age": 30,
+  "address": {
+    "street": "123 Elm St",
+    "city": "Dallas",
+    "state": "TX"
+  },
+  "hobbies": ["reading", "gaming", "hiking"]
+}
+
+Conclusion
+Transitioning from PostgreSQL to MongoDB introduced me to the flexibility and scalability of NoSQL databases, significantly impacting my professional development and aiding in my role at iService Web. As databases continue to evolve, the choice between SQL and NoSQL will largely depend on specific project requirements, but understanding both will be beneficial for any developer.
+
+Feel free to dive deeper into MongoDB and explore its potential to enhance your projects!
