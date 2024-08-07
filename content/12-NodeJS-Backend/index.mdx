@@ -1,0 +1,104 @@
+---
+title: "Setting Up a Node.js Server: Understanding Controllers, Routers, and Services"
+description: "Dive into the basics of Node.js and learn how controllers, routers, and services interact to build efficient backend applications."
+image: "../../public/blog-images/nodejs.png"
+publishedAt: "2024-09-1"
+updatedAt: "2024-08-10"
+author: "JC Ashley"
+isPublished: true
+tags: 
+- Node.js
+- Backend Development
+- Programming
+---
+
+## Introduction
+
+[Node.js](https://nodejs.org/docs/latest/api/) has revolutionized the way we think about web servers and backend development. Its event-driven, non-blocking I/O model makes it ideal for data-intensive real-time applications that run across distributed devices. But setting up a [Node.js](https://nodejs.org/docs/latest/api/) server involves more than just starting a server; it requires a good understanding of how routers, controllers, and services work together to handle requests and process data.
+
+## Setting Up a Basic [Node.js](https://nodejs.org/docs/latest/api/) Server
+
+Before diving into the complex parts, let’s start with setting up a basic [Node.js](https://nodejs.org/docs/latest/api/) server:
+
+```javascript
+const express = require('express');
+const app = express();
+const port = 3001;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+```
+
+In this simple example, we use [Express.js](https://expressjs.com/en/5x/api.html), a fast and minimalist web framework for [Node.js](https://nodejs.org/docs/latest/api/), to create a server that listens on port 3001 and responds with 'Hello World!' when the root URL is accessed.
+
+## Understanding Controllers, Routers, and Services
+### Routers
+Routers are responsible for directing incoming HTTP requests to the correct controllers based on the route accessed. They act as the first point of contact in handling a request and play a crucial role in defining URL endpoints and their corresponding actions.
+
+``` javascript
+const express = require('express');
+const userHandlers = require('./controllers/userHandlers');
+const router = express.Router();
+
+router.get('/users', userHandlers.listUsers);
+router.post('/users', userHandlers.createUser);
+
+module.exports = router;
+```
+### Controllers
+Controllers handle the business logic for an application. Each function in a controller is designed to handle requests that are routed to it, interact with models to retrieve data, and return responses to the client.
+
+``` javascript
+const userService = require('../services/userService');
+
+const listUsers = async (req, res) => {
+  const users = await userService.findAllUsers();
+  res.send(users);
+};
+
+const createUser = async (req, res) => {
+  const newUser = await userService.addUser(req.body);
+  res.send(newUser);
+};
+
+module.exports = {
+  listUsers,
+  createUser
+};
+``` 
+### Services
+Services are used to encapsulate business logic and interactions with the database. They provide methods that controllers can call, ensuring that the controller does not directly handle the data access code but instead calls services that manage these interactions.
+
+``` javascript
+const db = require('../models/db');
+
+const findAllUsers = async () => {
+  return await db.find({});
+};
+
+const addUser = async (userData) => {
+  return await db.insert(userData);
+};
+
+module.exports = {
+  findAllUsers,
+  addUser
+};
+```
+
+## How They Work Together
+- Routers define routes and specify which controller function should be called for each route.
+- Controllers process incoming requests, invoke services, and return responses.
+- Services handle the logic required to access and manipulate data models.
+- This separation of concerns not only keeps the code clean but also makes it easier to manage and scale the application.
+
+## Conclusion
+Understanding the roles of routers, controllers, and services in a [Node.js](https://nodejs.org/docs/latest/api/) backend setup is crucial for developing scalable and maintainable applications. This architecture not only helps in organizing code better but also ensures that each component is responsible for a specific task, making the application easier to debug and extend. As you continue to build more complex applications, this foundational knowledge will allow you to effectively manage and optimize your backend services.
+
+ PS 
+- If you have any questions or comments, please reach out to me on [LinkedIn](https://www.linkedin.com/in/jeremy-ashley-webdev/) (don't hesitate if you see something wrong)
