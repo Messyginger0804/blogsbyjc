@@ -64,6 +64,17 @@ app.listen(PORT, () => {
 });
 ```
 
+## What This JWT Part Does
+### The server we just set up does a few things in simple terms:
+
+- User Login: When a user logs in, the server verifies their credentials. Once verified, it creates a JWT—a small piece of data that proves the user has logged in successfully.
+- Access-Controlled Routes: The server uses this token to check if the user is allowed to access certain parts of the application. It’s like a stamp on your hand at a concert, showing security that you’ve paid and can enter.
+
+## Transitioning to Refresh Tokens
+While JWTs are excellent for short-term validation, what happens when you want the user to stay logged in over extended periods without compromising security? This is where refresh tokens come into play.
+
+Refresh tokens allow users to obtain new access tokens without the need to log in again and again. It's ideal for applications where user sessions need to be maintained securely but don't handle extremely sensitive data, like a social media site or a content platform.
+
 ### Implementing Refresh Tokens
 
 Now, let’s add the capability to use refresh tokens to obtain new access tokens without needing the user to log in again:
@@ -91,6 +102,9 @@ app.post('/logout', (req, res) => {
 });
 
 ```
+### How Refresh Tokens Work
+- Longer Session Management: Refresh tokens are used to generate new access tokens. Imagine you have a pass that lets you come and go in a secure area. Instead of getting a new pass each time, you show your refresh token to quickly get a new pass.
+- Security and Convenience: They strike a balance between maintaining security and providing convenience by minimizing the need for frequent logins.
 
 ## Conclusion
 By implementing JWTs and refresh tokens, you enhance the security and usability of your web applications. Users can maintain their sessions over extended periods securely, similar to how platforms like LinkedIn handle user sessions. Make sure to manage and store these tokens securely to prevent unauthorized access and potential security breaches.
