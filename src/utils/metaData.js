@@ -16,7 +16,7 @@ const siteMetadata = {
     twitter: 'https://twitter.com/Messyginger0804',
     linkedin: 'https://www.linkedin.com/in/jeremy-ashley-webdev/',
     portfolio: 'https://jcashleyportfolio.netlify.app/',
-    resume: 'https://drive.google.com/file/d/1gF3bfL9F0kn5cWfEy46_2wKaI2k3p-gE/view',
+    resume: 'https://drive.google.com/file/d/1uElUd-wQfacsXWdgJ7afAv8Y8N6KE8pZ/view',
     portfolioImage: headshot,
     locale: 'en-US',
 }

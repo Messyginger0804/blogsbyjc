@@ -1,7 +1,7 @@
 
 
 export const link = {
-    resume: 'https://drive.google.com/file/d/1rp7fh3JPqZrIEaAeRySZkE4FO82GM1wb/view?usp=drive_link',
+    resume: 'https://drive.google.com/file/d/1uElUd-wQfacsXWdgJ7afAv8Y8N6KE8pZ/view',
 
 
     linkedin: 'https://www.linkedin.com/in/jeremy-ashley-webdev/',
