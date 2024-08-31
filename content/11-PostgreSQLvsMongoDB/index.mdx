@@ -14,21 +14,19 @@ tags:
 - Data Aggregation
 ---
 
-## Introduction
-
-Understanding how MongoDB and PostgreSQL handle data aggregation can offer valuable insights into selecting the right database for specific applications. This blog dives into each database's aggregation frameworks, comparing their approaches and syntax to perform similar tasks.
+Understanding how [MongoDB](https://www.mongodb.com/docs/) and [PostgreSQL](https://www.postgresql.org/) handle data aggregation can offer valuable insights into selecting the right database for specific applications. This blog dives into each database's aggregation frameworks, comparing their approaches and syntax to perform similar tasks.
 
 ## MongoDB vs. PostgreSQL: Aggregation Frameworks
 
-Both MongoDB and PostgreSQL offer powerful tools for data aggregation, but their methodologies and syntax differ significantly due to their underlying data models—NoSQL and SQL.
+Both [MongoDB](https://www.mongodb.com/docs/) and [PostgreSQL](https://www.postgresql.org/) offer powerful tools for data aggregation, but their methodologies and syntax differ significantly due to their underlying data models—NoSQL and SQL.
 
 ### MongoDB Aggregation
 
-MongoDB uses an aggregation pipeline that allows documents to be transformed and combined into aggregated results.
+[MongoDB](https://www.mongodb.com/docs/) uses an aggregation pipeline that allows documents to be transformed and combined into aggregated results.
 
 #### `$match` and `$group` in MongoDB
 
-Here's a review of how MongoDB handles filtering and grouping:
+Here's a review of how [MongoDB](https://www.mongodb.com/docs/) handles filtering and grouping:
 
 ```javascript
 // MongoDB: Filtering active users and grouping by age
@@ -38,13 +36,13 @@ db.collection('users').aggregate([
 ]);
 ```
 
-PostgreSQL Aggregation
-PostgreSQL uses SQL queries with GROUP BY and WHERE clauses to achieve similar results.
+[PostgreSQL](https://www.postgresql.org/) Aggregation
+[PostgreSQL](https://www.postgresql.org/) uses SQL queries with GROUP BY and WHERE clauses to achieve similar results.
 
-Equivalent SQL Query in PostgreSQL
-Here's how you would write a query in PostgreSQL to achieve the same:
+Equivalent SQL Query in [PostgreSQL](https://www.postgresql.org/)
+Here's how you would write a query in [PostgreSQL](https://www.postgresql.org/) to achieve the same:
 
--- PostgreSQL: Filtering active users and grouping by age
+-- [PostgreSQL](https://www.postgresql.org/): Filtering active users and grouping by age
 
 ```sql
 SELECT age, COUNT(*) AS total
@@ -52,20 +50,27 @@ FROM users
 WHERE status = 'active'
 GROUP BY age;
 ```
-Explanation:
+### Explanation:
 
-The `WHERE` clause in PostgreSQL is similar to `$match` in MongoDB, filtering rows before grouping.
-`GROUP BY` in PostgreSQL groups the results by age, similar to `$group` in MongoDB.
-`COUNT(*)` is used to count the entries in each group, akin to `{$sum: 1}` in MongoDB.
-Detailed Comparison: Functionality and Performance
-Use Cases
-MongoDB: Excellent for unstructured data and when the schema is dynamic or not clearly defined. Its aggregation pipeline is powerful for handling complex data transformations.
-PostgreSQL: Ideal for complex queries involving multiple tables that require high data integrity and complex joins.
-Performance Considerations
-MongoDB: Can be more performant for read-heavy applications with large volumes of data due to its ability to handle large unstructured data sets efficiently.
-PostgreSQL: Often excels in transaction-heavy applications that require consistent read/write speeds and complex transactions.
-Practical Examples: Complex Aggregations
-MongoDB: Advanced Document Aggregation
+- The `WHERE` clause in [PostgreSQL](https://www.postgresql.org/) is similar to `$match` in [MongoDB](https://www.mongodb.com/docs/), filtering rows before grouping.
+- `GROUP BY` in [PostgreSQL](https://www.postgresql.org/) groups the results by age, similar to `$group` in [MongoDB](https://www.mongodb.com/docs/).
+- `COUNT(*)` is used to count the entries in each group, akin to `{$sum: 1}` in [MongoDB](https://www.mongodb.com/docs/).
+
+## Detailed Comparison: Functionality and Performance
+### Use Cases
+- [MongoDB](https://www.mongodb.com/docs/): Excellent for unstructured data and when the schema is dynamic or not clearly defined. Its aggregation pipeline is powerful for handling complex data transformations.
+
+- [PostgreSQL](https://www.postgresql.org/): Ideal for complex queries involving multiple tables that require high data integrity and complex joins.
+
+## Performance Considerations
+
+- [MongoDB](https://www.mongodb.com/docs/): Can be more performant for read-heavy applications with large volumes of data due to its ability to handle large unstructured data sets efficiently.
+
+- [PostgreSQL](https://www.postgresql.org/): Often excels in transaction-heavy applications that require consistent read/write speeds and complex transactions.
+
+## Practical Examples: Complex Aggregations
+
+### MongoDB: Advanced Document Aggregation
 Consider a scenario where you need to aggregate user data based on multiple fields:
 
 ```javascript
@@ -76,10 +81,10 @@ db.collection('users').aggregate([
 ]);
 ```    
 
-PostgreSQL: Complex SQL Query
-Achieving a similar result in PostgreSQL with subqueries and array aggregation:
+## PostgreSQL: Complex SQL Query
+Achieving a similar result in [PostgreSQL](https://www.postgresql.org/) with subqueries and array aggregation:
 
--- PostgreSQL: Aggregating data by status and age, listing hobbies
+-- [PostgreSQL](https://www.postgresql.org/): Aggregating data by status and age, listing hobbies
 ```sql
 SELECT status, age, array_agg(hobbies) AS hobbies
 FROM users
@@ -87,7 +92,11 @@ WHERE status = 'active'
 GROUP BY status, age;
 ```
 
-Conclusion
-Choosing between MongoDB and PostgreSQL for aggregation tasks depends on the specific needs of your application, data structure, and performance requirements. Both systems offer robust capabilities, but their optimal use cases can differ significantly based on data handling and query complexity.
+## Conclusion
+Choosing between [MongoDB](https://www.mongodb.com/docs/) and [PostgreSQL](https://www.postgresql.org/) for aggregation tasks depends on the specific needs of your application, data structure, and performance requirements. Both systems offer robust capabilities, but their optimal use cases can differ significantly based on data handling and query complexity.
 
-For more insights or a deeper discussion on database selection and optimization, feel free to reach out on LinkedIn. Expand your database knowledge and ensure you're using the right tools for your data-driven applications.
+For more insights please click on eany of the [MongoDB](https://www.mongodb.com/docs/) or [PostgreSQL](https://www.postgresql.org/) text they link straight to their respective documentation.
+
+ PS 
+- These are just some tips I wanted to pass on from my time working at [iServiceWeb](https://www.iserviceweb.io/). Being that my first work was with PostgreSQL and my inernship being with [MongoDB](https://www.mongodb.com/docs/). 
+- If you have any questions or comments, please reach out to me on [LinkedIn](https://www.linkedin.com/in/jeremy-ashley-webdev/) (don't hesitate if you see something wrong)
