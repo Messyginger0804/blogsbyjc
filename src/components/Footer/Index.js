@@ -37,7 +37,7 @@ function Footer() {
                     © 2023 JC Software. All rights reserved. 😜
                 </span>
                 <div className='text-center'>
-                    Made with &hearts; by <a href={siteMetadata.portfolio} target="_blank" className='underline hover:font-bold'>JC Ashley </a>
+                    Made with &hearts; by <a href={siteMetadata.portfolio} className='underline hover:font-bold'>JC Ashley </a>
                 </div>
             </div>
         </footer>
