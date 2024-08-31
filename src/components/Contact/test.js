@@ -1,16 +1,17 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
+// import Logo from "../Header/Logo";
 import Image from "next/image";
 import me from "../../../public/bitmoji1.png"
-import { CircularProgress } from 'react-icons/fa';
 
+
+// import { useForm } from "react-hook-form";
 
 export default function ContactForm() {
-    const [loading, setLoading] = useState(false);
-    const form = useRef();
 
+    const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -32,6 +33,7 @@ export default function ContactForm() {
     return (
 
         <>
+
             <form
                 ref={form}
                 onSubmit={sendEmail}
@@ -60,19 +62,8 @@ export default function ContactForm() {
                     rows={3}
                     className="bg-red-100/20 rounded-2xl pl-4 w-full outline-none border-0 p-0 mx-0 focus:ring-0  placeholder:text-lg border-b border-gray 
         focus:border-gray" />
-                <button
-                    type="submit"
-                    value="send request"
-                    className="bg-accent/60 dark:bg-accentDark/20 mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark cursor-pointe rounded-xl hover:bg-accent dark:hover:bg-yellow-500">
-                    {
-                        loading ? (
-                            <CircularProgress size={24} />
-                        ) : (
-                            "Send Message"
-                        )
-                    }
-
-                </button>
+                <input type="submit" value="send request"
+                    className="bg-red-100/80 mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer" />
             </form>
             <ToastContainer
                 lt
