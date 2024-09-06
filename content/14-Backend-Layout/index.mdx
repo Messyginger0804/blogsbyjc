@@ -18,12 +18,14 @@ tags:
 
 A well-organized backend architecture not only ensures smooth operation but also enhances scalability and maintainability. Understanding how different components like servers, controllers, routes, and services interact is key to developing efficient backend systems. This guide explains each component and their interdependencies, providing insights into building a clean and effective backend structure.
 
+- The examples provided here are with NodeJS the logic and structure of your backend will be the same no matter the language used just syntax will be different.
+
 ## Server: The Backbone of Your Application
 
-### Server Responsibilities:
+### Responsibilities:
 The server acts as the central hub where all requests and responses are managed. It's responsible for listening to incoming HTTP requests and dispatching them to the appropriate controllers based on the defined routes.
 
-#### Server Example:
+#### Example:
 
 ```javascript
 const express = require('express');
@@ -41,11 +43,12 @@ In this setup, the server uses Express.js to handle routing with middleware that
 ## Controllers: Orchestrating the Flow
 Controllers are crucial in the MVC (Model-View-Controller) architecture. They act as intermediaries between the server's incoming requests (routed correctly) and the services that handle the business logic. Controllers parse incoming data, pass it to services, and then send the response back to the client.
 
-### Controllers Responsibilities:
+### Responsibilities:
 - Data Parsing: Extract and validate data from requests.
 - Authentication: Utilize tokens to authenticate requests.
 - Response Handling: Send responses based on the outcomes of business logic.
-#### Controller Example:
+
+#### Example:
 
 ```javascript
 const userService = require('../services/userService');
@@ -59,10 +62,14 @@ exports.createUser = (req, res) => {
 ```
 
 ## Routes: Defining Endpoints
+### Responsibilities:
+
 - Routes define the endpoints of your application 
 - Direct requests to the appropriate controllers based on the URL and HTTP method.
 
-#### Route Example:
+
+#### Example:
+
 ```javascript
 const express = require('express');
 const router = express.Router();
@@ -76,7 +83,7 @@ module.exports = router;
 ## Services: The Functional Core
 Services in the backend are analogous to functions in the frontend. They encapsulate the business logic of your application, performing specific tasks like database operations, validation, or any other processing required by the application.
 
-## Comparison:
+### Comparison:
 - Backend Services: Handle data processing, database interactions, and business rules.
 - Frontend Functions: Manage UI logic, state updates, and react to user interactions.
 #### Example:
@@ -93,6 +100,27 @@ exports.addUser = async (userData) => {
   }
 };
 ```
+## Review:
+#### Client:
+
+- Workflow: Sends requests (e.g., HTTP GET, POST) to the server's routes and awaits the processed response to display or use within the application.
+
+#### Route:
+
+- Responsibility: Defines the endpoints of the application and directs incoming requests to the appropriate controllers based on the URL and HTTP method.
+- Workflow: Acts as the entry point for requests, determining which controller should handle each type of request.
+
+#### Controller:
+
+- Responsibility: Acts as an intermediary between the server's routes and the services that execute business logic. It manages the flow of data, including parsing, authentication, and response handling.
+- Workflow: Receives the data from the route, processes it as necessary, invokes the corresponding service functions, and prepares the response to send back to the client.
+
+
+#### Service:
+
+- Responsibility: Encapsulates the core business logic and operations of the application, handling tasks like database interactions, data validation, and processing.
+- Workflow: Performs specific tasks as directed by the controller, interacts with databases or other services, and returns data to the controller for further action.
+
 ## Conclusion
 Understanding and properly structuring servers, controllers, routes, and services are fundamental for any developer looking to build scalable and maintainable backend systems. By clearly defining the responsibilities and interactions of these components, developers can ensure that their applications are well-organized and efficient. Remember, the key to mastering backend development is not just about writing code but organizing it intelligently.
 
