@@ -1,8 +1,8 @@
 ---
-title: "Optimizing Backend File Structure: Servers, Controllers, Routes, and Services"
+title: "Understanding Backend File Structure: Servers, Controllers, Routes, and Services"
 description: "Learn about organizing your backend file structure efficiently, focusing on the relationships and roles of servers, controllers, routes, and services in processing and responding to client requests."
 image: "../../public/blog-images/emile-perron-xrVDYZRGdw4-unsplash.jpg"
-publishedAt: "2024-09-20"
+publishedAt: "2024-10-1"
 updatedAt: "2024-09-20"
 author: "JC Ashley"
 isPublished: true
@@ -18,12 +18,12 @@ tags:
 
 A well-organized backend architecture not only ensures smooth operation but also enhances scalability and maintainability. Understanding how different components like servers, controllers, routes, and services interact is key to developing efficient backend systems. This guide explains each component and their interdependencies, providing insights into building a clean and effective backend structure.
 
-- The examples provided here are with NodeJS the logic and structure of your backend will be the same no matter the language used just syntax will be different.
+- The examples provided here are with [NodeJS](https://nodejs.org/en) the logic and structure of your backend will be the same no matter the language used just syntax will be different.
 
 ## Server: The Backbone of Your Application
 
 ### Responsibilities:
-The server acts as the central hub where all requests and responses are managed. It's responsible for listening to incoming HTTP requests and dispatching them to the appropriate controllers based on the defined routes.
+The server acts as the central hub where all requests and responses are managed. It's responsible for listening to incoming [HTTP](https://www.w3schools.com/whatis/whatis_http.asp) requests and dispatching them to the appropriate controllers based on the defined routes.
 
 #### Example:
 
@@ -65,7 +65,7 @@ exports.createUser = (req, res) => {
 ### Responsibilities:
 
 - Routes define the endpoints of your application 
-- Direct requests to the appropriate controllers based on the URL and HTTP method.
+- Direct requests to the appropriate controllers based on the URL and [HTTP](https://www.w3schools.com/whatis/whatis_http.asp) method.
 
 
 #### Example:
@@ -103,7 +103,7 @@ exports.addUser = async (userData) => {
 ## Review:
 #### Client:
 
-- Workflow: Sends requests (e.g., HTTP GET, POST) to the server's routes and awaits the processed response to display or use within the application.
+- Workflow: Sends requests (e.g., [HTTP](https://www.w3schools.com/whatis/whatis_http.asp) GET, POST) to the server's routes and awaits the processed response to display or use within the application.
 
 #### Route:
 
