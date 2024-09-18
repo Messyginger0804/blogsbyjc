@@ -1,7 +1,7 @@
 import tias from '../components/About/assets/tias-logo.png'
 import port from '../components/About/assets/port.jpg'
 import tic from '../components/About/assets/Tic_tac_toe.svg.png'
-import dinfin from '../components/About/assets/dinerfinder.png'
+// import dinfin from '../components/About/assets/dinerfinder.png'
 import google from '../components/About/assets/google.jpg'
 import movieReview from '../components/About/assets/movieReview.jpg'
 import blog from '../components/About/assets/profile.png'
@@ -17,26 +17,6 @@ export const projects = [
         desc: 'Explore my FreeCodeCamp portfolio—a culmination of projects crafted using vanilla JavaScript and Tailwind CSS, following the Responsive Web Design roadmap. This single-page application, my inaugural project with routing, is devoid of frameworks. Immerse yourself in my projects and witness the passion fueling my journey in web development!',
         repo: 'https://github.com/Messyginger0804/freeCodeCampPortfolio.git',
         live: 'https://jcfreecodecamp.netlify.app/',
-    },
-    // {
-    //     isPublished: false,
-    //     inProgress: true,
-    //     title: "Diner Finder",
-    //     image: dinfin,
-    //     descTitle: 'Restaurant Review Site',
-    //     desc: 'DinerFinder: Review and rate restaurants with Vite, React, Tailwind CSS (Frontend) and Node.js, PostgreSQL (Backend). Expanding this is currently an MVP',
-    //     repo: 'https://github.com/Messyginger0804/dinerAudit',
-    //     live: 'http://3.144.102.215/',
-    // },
-    {
-        isPublished: false,
-        inProgress: true,
-        title: "Tias2.0",
-        image: tias,
-        descTitle: 'Full Stack E-commerce',
-        desc: 'This is the second version of the E-commerce site Tias. This is not just a new version but a completely rebuilt site. The code is rewritten the functionality will be different. sleek modern design, admin and a custom database using MongoDB and Firebase.',
-        repo: 'https://github.com/Messyginger0804/Tias2.0',
-        live: 'n/a',
     },
     {
         isPublished: true,
@@ -87,15 +67,5 @@ export const projects = [
         desc: `Welcome to my Next.js portfolio website. It's my first foray into Next.js, and although it's currently a single-page app, I've utilized Next.js features like image and link components for a sleek and responsive design, enhanced by Tailwind CSS.`,
         repo: 'https://github.com/Messyginger0804/next.js-portfolio',
         live: 'https://jcashleyportfolio.netlify.app/',
-    },
-    {
-        isPublished: true,
-        inProgress: false,
-        title: "Tic-Tac-Toe",
-        image: tic,
-        descTitle: 'Classic Tic-Tac-Toe 🎮',
-        desc: `Classic Tic-Tac-Toe 🎮Tic-Tac-Toe game crafted with vanilla JavaScript to dynamically manipulate the Document Object Model (DOM). This creation signifies a significant milestone in my coding journey, highlighting my burgeoning programming expertise and unwavering enthusiasm for web development.`,
-        repo: 'https://github.com/Messyginger0804/Arcade',
-        live: 'https://tictactoebyjc.netlify.app/',
     },
 ]
