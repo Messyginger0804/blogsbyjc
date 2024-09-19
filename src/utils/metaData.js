@@ -1,4 +1,3 @@
-// please update required information
 import headshot from '../components/About/assets/headshot.jpg'
 
 const siteMetadata = {
@@ -12,6 +11,7 @@ const siteMetadata = {
     siteLogo: '/profile.png',
     socialBanner: '/social-banner.png',
     email: 'j.c.ashley4363@gmail.com',
+    company: 'https://dfwsc.netlify.app',
     github: 'https://github.com/Messyginger0804',
     twitter: 'https://twitter.com/Messyginger0804',
     linkedin: 'https://www.linkedin.com/in/jeremy-ashley-webdev/',

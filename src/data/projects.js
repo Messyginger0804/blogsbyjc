@@ -1,7 +1,5 @@
 import tias from '../components/About/assets/tias-logo.png'
 import port from '../components/About/assets/port.jpg'
-import tic from '../components/About/assets/Tic_tac_toe.svg.png'
-// import dinfin from '../components/About/assets/dinerfinder.png'
 import google from '../components/About/assets/google.jpg'
 import movieReview from '../components/About/assets/movieReview.jpg'
 import blog from '../components/About/assets/profile.png'
