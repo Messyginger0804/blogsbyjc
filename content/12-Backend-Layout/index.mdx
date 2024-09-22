@@ -38,7 +38,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 ```
 
-In this setup, the server uses Express.js to handle routing with middleware that directs requests for user-related actions to the user routes.
+In this setup, the server uses [Express.js](https://expressjs.com/) to handle routing with middleware that directs requests for user-related actions to the user routes.
 
 ## Controllers: Orchestrating the Flow
 Controllers are crucial in the MVC (Model-View-Controller) architecture. They act as intermediaries between the server's incoming requests (routed correctly) and the services that handle the business logic. Controllers parse incoming data, pass it to services, and then send the response back to the client.
@@ -122,7 +122,10 @@ exports.addUser = async (userData) => {
 - Workflow: Performs specific tasks as directed by the controller, interacts with databases or other services, and returns data to the controller for further action.
 
 ## Conclusion
+
 Understanding and properly structuring servers, controllers, routes, and services are fundamental for any developer looking to build scalable and maintainable backend systems. By clearly defining the responsibilities and interactions of these components, developers can ensure that their applications are well-organized and efficient. Remember, the key to mastering backend development is not just about writing code but organizing it intelligently.
 
 ### PS 
 - If you have any questions or comments, please reach out to me on [LinkedIn](https://www.linkedin.com/in/jeremy-ashley-webdev/) (don't hesitate if you see something wrong)
+
+- When I began my internship at [iServiceWeb](https://www.iserviceweb.io) I didn't really understand the backend layout and neither did many of my fellow intenrs. So I thought I would provide this bog for anyone who is intimidated with backend structure.
