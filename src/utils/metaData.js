@@ -14,7 +14,7 @@ const siteMetadata = {
     company: 'https://dfwsc.netlify.app',
     github: 'https://github.com/Messyginger0804',
     twitter: 'https://twitter.com/Messyginger0804',
-    linkedin: 'https://www.linkedin.com/in/jeremy-ashley-webdev/',
+    linkedin: 'https://www.linkedin.com/in/dev-jc/',
     portfolio: 'https://blogsbyjc.vercel.app/portfolio',
     resume: 'https://drive.google.com/file/d/1uElUd-wQfacsXWdgJ7afAv8Y8N6KE8pZ/view',
     portfolioImage: headshot,

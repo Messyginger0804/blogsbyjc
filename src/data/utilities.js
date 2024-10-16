@@ -13,7 +13,7 @@ export const link = {
 }
 
 export const bannerStuff = [
-    "Lead Intern at iServiceWeb 💻",
+    "Full-Stack Web Developer at Onix Media 💻",
     "UTD Alumni 🎓",
     "10+ Years of Management Experience 💼",
     "12+ Projects Completed 📄",
