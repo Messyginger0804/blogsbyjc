@@ -4,7 +4,7 @@ export const link = {
     resume: 'https://drive.google.com/file/d/1uElUd-wQfacsXWdgJ7afAv8Y8N6KE8pZ/view',
 
 
-    linkedin: 'https://www.linkedin.com/in/jeremy-ashley-webdev/',
+    linkedin: 'https://www.linkedin.com/in/dev-jc/',
     github: 'https://github.com/messyginger0804',
     twitter: 'https://twitter.com/messyginger0804',
 
@@ -17,7 +17,7 @@ export const bannerStuff = [
     "UTD Alumni 🎓",
     "10+ Years of Management Experience 💼",
     "12+ Projects Completed 📄",
-    "Volunteer for Dallas Software Developer 🌐",
+    "Member of Dallas Software Developer Group 🌐",
     "Blogger 📝",
     "Funny Guy 😜",
 ];
