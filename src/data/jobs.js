@@ -23,7 +23,7 @@ export const contractedJobs = [
         title: 'JLD Counseling',
         contact: 'Jason Daughtery',
         phoneNumber: '214-785-7426',
-        link: 'https://jldcounseling.netlify.com/',
+        link: 'https://jldcounseling.com/',
         image: JLD,
         description: 'DFW Therapy and Counseling Clinic',
     },
