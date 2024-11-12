@@ -3,7 +3,7 @@ import { FaReact, FaNodeJs, FaBootstrap, FaAws, FaWordpress } from 'react-icons/
 import { TbBrandNextjs } from 'react-icons/tb';
 import { DiJavascript, DiCss3, DiJava } from 'react-icons/di';
 import { AiFillHtml5 } from 'react-icons/ai';
-import { SiPostgresql, SiExpress, SiTailwindcss, SiAxios, SiMongodb, SiFirebase, SiAcademia, SiVite, SiSpringboot } from 'react-icons/si';
+import { SiPostgresql, SiExpress, SiTailwindcss, SiAxios, SiMongodb, SiFirebase, SiAcademia, SiVite, SiSpringboot, SiPython } from 'react-icons/si';
 
 
 
@@ -64,6 +64,10 @@ export const backTech = [
         icon: <SiAcademia className='text-2xl' />
     },
     {
+        name: 'Python',
+        icon: <SiPython className='2xl'/>
+    },
+    {
         name: 'Java',
         icon: <DiJava className='text-2xl' />
     },
@@ -82,5 +86,5 @@ export const backTech = [
     {
         name: 'Firebase',
         icon: <SiFirebase className='text-2xl' />,
-    }
+    },
 ]
