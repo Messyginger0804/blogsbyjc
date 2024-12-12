@@ -5,8 +5,10 @@ import React, { lazy } from 'react'
 import Tag from '../Elements/Tag';
 import { slug } from 'github-slugger';
 
-function HomeCover({ blogs }) {
 
+
+function HomeCover({ blogs }) {
+    
     const sortedBlogs = sortBlogs(blogs);
     const blog = sortedBlogs[1]
     return (

@@ -84,8 +84,6 @@ const Blog = defineDocumentType(() => ({
                     }
 
                 })
-
-
                 return headings;
             }
         }
