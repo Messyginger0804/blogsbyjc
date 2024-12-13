@@ -24,7 +24,7 @@ export async function GET(req) {
     const latestBlog = {
       title: blog.title || "Untitled Blog",
       snippet: blog.description || "No description available.",
-      url: `${baseUrl}/blog/14-jwtToken}`,
+      url: `${baseUrl}/blogs/14-jwtToken}`,
       image: imageUrl,
       tags: blog.tags || [],
     };
