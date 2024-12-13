@@ -10,6 +10,8 @@ import { slug } from 'github-slugger';
 function HomeCover({ blogs }) {
     
     const sortedBlogs = sortBlogs(blogs);
+
+    console.log(sortedBlogs)
     const blog = sortedBlogs[1]
     return (
         <div className='w-full inline-block'>
