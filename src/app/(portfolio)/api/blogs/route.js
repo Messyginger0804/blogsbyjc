@@ -15,9 +15,9 @@ export async function GET(req) {
     console.log("Selected Blog:", blog); // Debugging: Check the structure of the blog
 
     // Extract and clean the image path
-    const cleanImagePath = blog.image?.filePath
-      ? blog.image.filePath.replace("../../public/", "")
-      : "placeholder.jpg"; // Use a placeholder if the image is missing
+    const cleanImagePath = blog.image?.filePath ? blog.image.filePath.replace(/(\.\.\/)+public\//, "")
+    : "placeholder.jpg"; // Fallback image
+
     const imageUrl = `${baseUrl}/${cleanImagePath}`;
 
     // Construct the API response
