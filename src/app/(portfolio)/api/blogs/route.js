@@ -1,28 +1,27 @@
 import { allBlogs } from 'contentlayer/generated'; // Import your blogs source
 import { sortBlogs } from '@/utils'; // Import the sort function
 
-// app/portfolio/api/blogs.js
 export async function GET(req) {
   try {
     const sortedBlogs = sortBlogs(allBlogs); // Sort blogs
     const blog = sortedBlogs[1]; // Get the second blog
 
-    // Convert relative image path to absolute URL
-    const baseUrl = "https://blogsbyjc.vercel.app";
-    const cleanPath = originalPath.replace("../../public/", "");
+    // Clean the image path
+    const baseUrl = "https://blogsbyjc.vercel.app"; // Your site URL
+    const cleanImagePath = blog.image.replace("../../public/", ""); // Remove "../../public/"
+    const imageUrl = `${baseUrl}/${cleanImagePath}`; // Construct the full image URL
 
     // Construct the API response
     const latestBlog = {
       title: blog.title,
       snippet: blog.description,
       url: blog.url,
-      image: `${baseUrl}${cleanPath}`, // Construct URL
+      image: imageUrl, // Use the cleaned and full image URL
+      tags: blog.tags,
     };
-    
 
     console.log("API Response:", latestBlog);
 
-    // Return the response with appropriate headers
     return new Response(JSON.stringify(latestBlog), {
       status: 200,
       headers: {
@@ -35,7 +34,6 @@ export async function GET(req) {
   } catch (error) {
     console.error("Error in GET /api/blogs:", error);
 
-    // Error handling
     return new Response(
       JSON.stringify({ message: "Failed to fetch blogs", error: error.message }),
       {
