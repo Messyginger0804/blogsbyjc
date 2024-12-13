@@ -12,8 +12,13 @@ export async function GET(req) {
     }
 
     const blog = sortedBlogs[1]; // Get the second blog
-    const cleanImagePath = blog.image ? blog.image.replace("../../public/", "") : "placeholder.jpg"; // Clean path
-    const imageUrl = `${baseUrl}/${cleanImagePath}`; // Construct the full image URL
+    console.log("Selected Blog:", blog); // Debugging: Check the structure of the blog
+
+    // Extract and clean the image path
+    const cleanImagePath = blog.image?.filePath
+      ? blog.image.filePath.replace("../../public/", "")
+      : "placeholder.jpg"; // Use a placeholder if the image is missing
+    const imageUrl = `${baseUrl}/${cleanImagePath}`;
 
     // Construct the API response
     const latestBlog = {
