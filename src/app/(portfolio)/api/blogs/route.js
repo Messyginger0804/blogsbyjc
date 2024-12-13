@@ -24,8 +24,8 @@ export async function GET(req) {
     const latestBlog = {
       title: blog.title || "Untitled Blog",
       snippet: blog.description || "No description available.",
-      url: blog.url || "/",
-      image: imageUrl, // Use the cleaned and full image URL
+      url: `${baseUrl}/blog/14-jwtToken}`,
+      image: imageUrl,
       tags: blog.tags || [],
     };
 
