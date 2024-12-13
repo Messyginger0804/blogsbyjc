@@ -3,21 +3,25 @@ import { sortBlogs } from '@/utils'; // Import the sort function
 
 export async function GET(req) {
   try {
-    const sortedBlogs = sortBlogs(allBlogs); // Sort blogs
-    const blog = sortedBlogs[1]; // Get the second blog
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://blogsbyjc.vercel.app"; // Dynamic base URL
 
-    // Clean the image path
-    const baseUrl = "https://blogsbyjc.vercel.app"; // Your site URL
-    const cleanImagePath = blog.image.replace("../../public/", ""); // Remove "../../public/"
+    // Sort blogs and check for data
+    const sortedBlogs = sortBlogs(allBlogs);
+    if (!sortedBlogs || sortedBlogs.length < 2) {
+      throw new Error("Insufficient blogs available");
+    }
+
+    const blog = sortedBlogs[1]; // Get the second blog
+    const cleanImagePath = blog.image ? blog.image.replace("../../public/", "") : "placeholder.jpg"; // Clean path
     const imageUrl = `${baseUrl}/${cleanImagePath}`; // Construct the full image URL
 
     // Construct the API response
     const latestBlog = {
-      title: blog.title,
-      snippet: blog.description,
-      url: blog.url,
+      title: blog.title || "Untitled Blog",
+      snippet: blog.description || "No description available.",
+      url: blog.url || "/",
       image: imageUrl, // Use the cleaned and full image URL
-      tags: blog.tags,
+      tags: blog.tags || [],
     };
 
     console.log("API Response:", latestBlog);

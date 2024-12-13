@@ -1,4 +1,3 @@
-// import headshot from '../components/About/assets/headshot.jpg'
 
 const siteMetadata = {
     title: 'Blogs by JC',
@@ -17,7 +16,7 @@ const siteMetadata = {
     linkedin: 'https://www.linkedin.com/in/dev-jc/',
     portfolio: 'https://blogsbyjc.vercel.app/portfolio',
     resume: 'https://drive.google.com/file/d/1uElUd-wQfacsXWdgJ7afAv8Y8N6KE8pZ/view',
-    portfolioImage: "/assets/headshot.jpg", // Use the static path
+    portfolioImage: "./assets/headshot.jpg", // Use the static path
     locale: 'en-US',
 }
 
