@@ -3,7 +3,7 @@ import { sortBlogs } from '@/utils'; // Import the sort function
 
 export async function GET(req) {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://blogsbyjc.vercel.app"; // Dynamic base URL
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://byjc.dev/blogs"; // Dynamic base URL
 
     // Sort blogs and check for data
     const sortedBlogs = sortBlogs(allBlogs);
@@ -11,7 +11,7 @@ export async function GET(req) {
       throw new Error("Insufficient blogs available");
     }
 
-    const blog = sortedBlogs[1]; // Get the second blog
+    const blog = sortedBlogs[0]; // Get the second blog
     console.log("Selected Blog:", blog); // Debugging: Check the structure of the blog
 
     // Extract and clean the image path
