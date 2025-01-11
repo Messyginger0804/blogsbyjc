@@ -1,6 +1,8 @@
 import { allBlogs } from 'contentlayer/generated'; // Import your blogs source
 import { sortBlogs } from '@/utils'; // Import the sort function
 
+// import image from '../../../../../public/blog-images/intership.jpg'
+
 export async function GET(req) {
   try {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://byjc.dev/blogs"; // Dynamic base URL
@@ -24,7 +26,7 @@ export async function GET(req) {
     const latestBlog = {
       title: blog.title || "Untitled Blog",
       snippet: blog.description || "No description available.",
-      url: `${baseUrl}/blogs/14-jwtToken`,
+      url: `${baseUrl}/blogs/15-internship`,
       image: imageUrl,
       tags: blog.tags || [],
       data: blog.date
